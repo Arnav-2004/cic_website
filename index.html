@@ -239,9 +239,11 @@
 
     <!--icons-->
     <link
-      href="https://christuniversity.in/css/line-awesome.min.css"
-      type="text/css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       href="https://christuniversity.in/css/font-awesome.min.css"
@@ -302,6 +304,18 @@
     </script>
   </head>
 
+  <style>
+    /* Ensure the body and html elements allow scrolling */
+    html,
+    body {
+      height: 100%;
+      overflow: auto;
+    }
+    .ciclogo {
+      bottom: -5px;
+    }
+  </style>
+
   <body>
     <div style="border-top: 1px solid #fff"></div>
     <div class="headerr" id="myHeader">
@@ -310,22 +324,24 @@
         <section id="header-logo">
           <div class="container-fluid max-w">
             <div class="row">
-              <div class="col-lg-2 col-sm-3">
+              <div class="col-lg-2 col-sm-3 col-6 test">
                 <a href="index.html">
                   <img
                     src="./assets/cic.png"
-                    class="img-responsive main-logo"
+                    class="img-responsive main-logo ciclogo"
+                    style="position: relative"
                   />
                 </a>
               </div>
-              <div class="col-lg-8 col-sm-6 text-center">
+              <div class="col-lg-8 col-sm-6 d-none d-sm-block text-center">
                 <!-- Centered content or leave it empty if not needed -->
               </div>
-              <div class="col-lg-2 col-sm-3 text-right">
+              <div class="col-lg-2 col-sm-3 col-6 text-right test1">
                 <a href="https://christuniversity.in/">
                   <img
                     src="https://christuniversity.in/images/logo.jpg"
-                    class="img-responsive main-logo"
+                    class="img-responsive main-logo christlogo"
+                    style="position: relative"
                   />
                 </a>
               </div>
@@ -422,13 +438,9 @@
                                       <a href="about.html">About CIC</a>
                                     </li>
 
-                                    
-
                                     <li>
                                       <a href="#">People</a>
                                     </li>
-
-                                    
 
                                     <li>
                                       <a href="visionmission.html"
@@ -502,11 +514,13 @@
                                 <div class="menu-lists">
                                   <ul class="no-pad">
                                     <li>
-                                      <a href="facilities.html">Our Facilities</a>
+                                      <a href="facilities.html"
+                                        >Our Facilities</a
+                                      >
                                     </li>
 
                                     <li>
-                                      <a href="#">Our Services</a>
+                                      <a href="services.html">Our Services</a>
                                     </li>
                                   </ul>
                                 </div>
@@ -520,39 +534,15 @@
                           id="mega-menu-item-25293"
                         >
                           <a
-                            href="#"
+                            href="process.html"
                             class="mega-menu-link new-clss"
                             tabindex="0"
                             aria-haspopup="true"
                             aria-expanded="false"
                             role="button"
                           >
-                            Process<span class="mega-indicator"></span></a
+                            Process</a
                           ><!--new-clss-active-->
-                          <ul class="mega-sub-menu" style="width: 221px">
-                            <li
-                              class="mega-menu-row mega-singlecolumnmobile"
-                              id="mega-menu-25293-0"
-                            >
-                              <div class="col-sm-12">
-                                <div class="menu-lists">
-                                  <ul class="no-pad">
-                                    <li>
-                                      <a href="#">Pre-Incubation</a>
-                                    </li>
-
-                                    <li>
-                                      <a href="#">Incubation</a>
-                                    </li>
-
-                                    <li>
-                                      <a href="#">Post-Incubation</a>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
                         </li>
                         <li
                           class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-item-align-float-left mega-disable-link mega-menu-item-92996"
@@ -618,6 +608,22 @@
                             aria-expanded="false"
                             role="button"
                           >
+                            Downloads</a
+                          ><!--new-clss-active-->
+                        </li>
+
+                        <li
+                          class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-item-align-float-left mega-disable-link mega-menu-item-92996"
+                          id="mega-menu-item-25293"
+                        >
+                          <a
+                            href="#"
+                            class="mega-menu-link new-clss"
+                            tabindex="0"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            role="button"
+                          >
                             Blog</a
                           ><!--new-clss-active-->
                         </li>
@@ -628,7 +634,10 @@
                         >
                           <div class="mega-search-wrap">
                             <!--<a href="#" class="btn btn-success admissions-bttn">  </a>-->
-                            <div class="btn-group show-on-hover">
+                            <div
+                              class="btn-group show-on-hover"
+                              style="bottom: -4"
+                            >
                               <button
                                 type="button"
                                 class="btn btn-primary dropdown-toggle admissions-bttn"
@@ -848,6 +857,130 @@
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section id="footr">
+        <div class="container">
+          <div class="col-lg-4 col-sm-6 col-md-4">
+            <div class="footr-itm-d">
+              <div class="col-sm-12 no-pad" style="padding-left: 12px">
+                <h3><strong>CHRIST Incubation Center</strong></h3>
+                <!-- <h4>(Deemed to be University)</h4> -->
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="addrs-itm">
+                <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
+                  <i class="las la-map-marker-alt footr-itmff"></i>
+                </div>
+                <div class="col-lg-10 col-xs-10 col-sm-10 col-md-10 no-pad">
+                  <p>
+                    Dharmaram College Post, Hosur Road, Bengaluru - 560029,<br />
+                    Karnataka, India
+                  </p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="addrs-itm">
+                <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
+                  <i class="las la-phone footr-itmff"></i>
+                </div>
+                <div class="col-lg-10 col-xs-10 col-sm-10 col-md-10 no-pad">
+                  <p>Tel: +91 804012 9100 / 9600</p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="addrs-itm">
+                <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
+                  <i class="las la-fax footr-itmff"></i>
+                </div>
+                <div class="col-lg-10 col-xs-10 col-sm-10 col-md-10 no-pad">
+                  <p>Fax: 40129000</p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="addrs-itm">
+                <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
+                  <i class="las la-envelope footr-itmff"></i>
+                </div>
+                <div class="col-lg-10 col-xs-10 col-sm-10 col-md-10 no-pad">
+                  <p>Email: mail@christuniversity.in</p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-3">
+            <div class="vison-mson">
+              <h4>Vision</h4>
+              <p style="font-style: normal">
+                Excellence in Innovative Entrepreneurship to serve the society
+              </p>
+              <h4>Mission</h4>
+              <p style="font-style: normal">
+                To promote and strive for excellence in developing reliable and
+                robust Innovation and Entrepreneurship eco-system for CHRIST
+                students, alumina, stakeholders, staff, and faculty
+              </p>
+            </div>
+          </div>
+          <div class="clearfix hdsw"></div>
+          <div class="col-lg-2 col-sm-6 col-md-2">
+            <div class="footr-lnkds">
+              <ul class="no-pad">
+                <li>
+                  <a href="about.html"> About Us </a>
+                </li>
+                <li><a href="facilities.html"> Our Facilities </a></li>
+                <li>
+                  <a href="services.html"> Our Services </a>
+                </li>
+                <li>
+                  <a href="process.html"> Process </a>
+                </li>
+                <li>
+                  <a href="#"> Blog </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-2 col-sm-6 col-md-3">
+            <div class="footr-lnkds">
+              <ul>
+                <li>
+                  <a href="http://library.christuniversity.in/"> Library </a>
+                </li>
+                <li>
+                  <a href="https://christuniversity.in/center"> Centres </a>
+                </li>
+                <li>
+                  <a href="https://christuniversity.in/center/O/CR">
+                    Research
+                  </a>
+                </li>
+                <li>
+                  <a href="https://christuniversity.in/admission-all">
+                    Admission
+                  </a>
+                </li>
+                <li>
+                  <a href="https://christuniversity.in/all-courses">
+                    Course Index
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="cpy-rgt">
+            <div class="col-sm-5 text-rigt">
+              Copyright &copy; CHRIST Incubation Center 2024
+            </div>
+          </div>
         </div>
       </section>
     </div>

@@ -302,6 +302,18 @@
     </script>
   </head>
 
+  <style>
+    /* Ensure the body and html elements allow scrolling */
+    html,
+    body {
+      height: 100%;
+      overflow: auto;
+    }
+    .ciclogo {
+      bottom: -5px;
+    }
+  </style>
+
   <body>
     <div style="border-top: 1px solid #fff"></div>
     <div class="headerr" id="myHeader">
@@ -310,22 +322,24 @@
         <section id="header-logo">
           <div class="container-fluid max-w">
             <div class="row">
-              <div class="col-lg-2 col-sm-3">
+              <div class="col-lg-2 col-sm-3 col-6 test">
                 <a href="index.html">
                   <img
                     src="./assets/cic.png"
-                    class="img-responsive main-logo"
+                    class="img-responsive main-logo ciclogo"
+                    style="position: relative"
                   />
                 </a>
               </div>
-              <div class="col-lg-8 col-sm-6 text-center">
+              <div class="col-lg-8 col-sm-6 d-none d-sm-block text-center">
                 <!-- Centered content or leave it empty if not needed -->
               </div>
-              <div class="col-lg-2 col-sm-3 text-right">
+              <div class="col-lg-2 col-sm-3 col-6 text-right test1">
                 <a href="https://christuniversity.in/">
                   <img
                     src="https://christuniversity.in/images/logo.jpg"
-                    class="img-responsive main-logo"
+                    class="img-responsive main-logo christlogo"
+                    style="position: relative"
                   />
                 </a>
               </div>
@@ -422,13 +436,9 @@
                                       <a href="about.html">About CIC</a>
                                     </li>
 
-                                    
-
                                     <li>
                                       <a href="#">People</a>
                                     </li>
-
-                                    
 
                                     <li>
                                       <a href="visionmission.html"
@@ -454,9 +464,7 @@
                             aria-expanded="false"
                             role="button"
                           >
-                            Current Incubatees<span
-                              class="mega-indicator"
-                            ></span></a
+                            Incubatees<span class="mega-indicator"></span></a
                           ><!--new-clss-active-->
                           <ul class="mega-sub-menu" style="width: 221px">
                             <li
@@ -466,11 +474,9 @@
                               <div class="col-sm-12">
                                 <div class="menu-lists">
                                   <ul class="no-pad">
-                                    <li><a href="#">Pre-Incubation</a></li>
+                                    <li><a href="#">Current Incubatees</a></li>
 
-                                    <li><a href="#">Incubation</a></li>
-
-                                    <li><a href="#">Post-Incubation</a></li>
+                                    <li><a href="#">Past Incubatees</a></li>
                                   </ul>
                                 </div>
                               </div>
@@ -495,23 +501,7 @@
                             aria-expanded="false"
                             role="button"
                           >
-                            Past Incubatees</a
-                          >
-                        </li>
-
-                        <li
-                          class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-item-align-float-left mega-disable-link mega-menu-item-92996"
-                          id="mega-menu-item-25293"
-                        >
-                          <a
-                            href="#"
-                            class="mega-menu-link new-clss"
-                            tabindex="0"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            role="button"
-                          >
-                            Process<span class="mega-indicator"></span></a
+                            What We Offer<span class="mega-indicator"></span></a
                           ><!--new-clss-active-->
                           <ul class="mega-sub-menu" style="width: 221px">
                             <li
@@ -522,21 +512,35 @@
                                 <div class="menu-lists">
                                   <ul class="no-pad">
                                     <li>
-                                      <a href="#">Pre-Incubation</a>
+                                      <a href="facilities.html"
+                                        >Our Facilities</a
+                                      >
                                     </li>
 
                                     <li>
-                                      <a href="#">Incubation</a>
-                                    </li>
-
-                                    <li>
-                                      <a href="#">Post-Incubation</a>
+                                      <a href="services.html">Our Services</a>
                                     </li>
                                   </ul>
                                 </div>
                               </div>
                             </li>
                           </ul>
+                        </li>
+
+                        <li
+                          class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-item-align-float-left mega-disable-link mega-menu-item-92996"
+                          id="mega-menu-item-25293"
+                        >
+                          <a
+                            href="process.html"
+                            class="mega-menu-link new-clss"
+                            tabindex="0"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            role="button"
+                          >
+                            Process</a
+                          ><!--new-clss-active-->
                         </li>
                         <li
                           class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-item-align-float-left mega-disable-link mega-menu-item-92996"
@@ -559,14 +563,50 @@
                           id="mega-menu-item-25293"
                         >
                           <a
-                            href="events.html"
+                            href="#"
                             class="mega-menu-link new-clss"
                             tabindex="0"
                             aria-haspopup="true"
                             aria-expanded="false"
                             role="button"
                           >
-                            Events</a
+                            Events<span class="mega-indicator"></span></a
+                          ><!--new-clss-active-->
+                          <ul class="mega-sub-menu" style="width: 221px">
+                            <li
+                              class="mega-menu-row mega-singlecolumnmobile"
+                              id="mega-menu-25293-0"
+                            >
+                              <div class="col-sm-12">
+                                <div class="menu-lists">
+                                  <ul class="no-pad">
+                                    <li>
+                                      <a href="#">Upcoming Events</a>
+                                    </li>
+
+                                    <li>
+                                      <a href="pastevents.html">Past Events</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li
+                          class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-item-align-float-left mega-disable-link mega-menu-item-92996"
+                          id="mega-menu-item-25293"
+                        >
+                          <a
+                            href="#"
+                            class="mega-menu-link new-clss"
+                            tabindex="0"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            role="button"
+                          >
+                            Downloads</a
                           ><!--new-clss-active-->
                         </li>
 
@@ -592,7 +632,10 @@
                         >
                           <div class="mega-search-wrap">
                             <!--<a href="#" class="btn btn-success admissions-bttn">  </a>-->
-                            <div class="btn-group show-on-hover">
+                            <div
+                              class="btn-group show-on-hover"
+                              style="bottom: -4"
+                            >
                               <button
                                 type="button"
                                 class="btn btn-primary dropdown-toggle admissions-bttn"
@@ -759,10 +802,7 @@
           >
             <div class="col-lg-5 col-sm-12">
               <div class="position-relative">
-                <img
-                  src="/assets/pe/1.png"
-                  alt=""
-                />
+                <img src="/assets/pe/1.png" alt="" />
                 <div class="events-date">
                   <div class="font-size28">12</div>
                   <div class="font-size14">Dec 2023</div>
@@ -778,13 +818,17 @@
                 >
                   <a href="event-details.html" class="text-theme-color"
                     >Innowave 23: Unleashing Entrepreneurial Innovation
-                    </a
-                  >
+                  </a>
                 </h5>
-                
+
                 <p>
-                  Innowave 23, held on December 12th and 13th, 2023, was a dynamic entrepreneurial summit featuring visionaries and industry leaders.<br></br>
-                  Innowave 23 also hosted competitions like the Sustainability Pitch Fest, Finsprint, and Synerpitch, highlighting sustainable innovations, financial acumen, and comprehensive business planning. 
+                  Innowave 23, held on December 12th and 13th, 2023, was a
+                  dynamic entrepreneurial summit featuring visionaries and
+                  industry leaders.<br /><br />
+                  Innowave 23 also hosted competitions like the Sustainability
+                  Pitch Fest, Finsprint, and Synerpitch, highlighting
+                  sustainable innovations, financial acumen, and comprehensive
+                  business planning.
                 </p>
                 <a
                   class="butn small margin-10px-top md-no-margin-top"
@@ -809,17 +853,20 @@
                   class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500"
                 >
                   <a href="event-details.html" class="text-theme-color"
-                    >Invicta’24</a
+                    >Invicta'24</a
                   >
                 </h5>
-                <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
-                  
-                </ul>
+                <ul
+                  class="event-time margin-10px-bottom md-margin-5px-bottom"
+                ></ul>
                 <p>
-                  Invicta held on January 29, 2024, was an entrepreneurial conclave hosted by the E-cell, 
-                  designed to empower the next generation of entrepreneurs through insights from visionary leaders in the startup ecosystem.<br></br>
-                  Invicta’24 fostered a vibrant atmosphere of learning and collaboration, equipping participants with the confidence and clarity to navigate the challenges of the startup ecosystem.
-
+                  Invicta held on January 29, 2024, was an entrepreneurial
+                  conclave hosted by the E-cell, designed to empower the next
+                  generation of entrepreneurs through insights from visionary
+                  leaders in the startup ecosystem.<br /><br />
+                  Invicta'24 fostered a vibrant atmosphere of learning and
+                  collaboration, equipping participants with the confidence and
+                  clarity to navigate the challenges of the startup ecosystem.
                 </p>
                 <a
                   class="butn small margin-10px-top md-no-margin-top"
@@ -831,10 +878,7 @@
             </div>
             <div class="col-lg-5 order-1 order-lg-2">
               <div class="position-relative">
-                <img
-                  src="/assets/pe/2.png"
-                  alt=""
-                />
+                <img src="/assets/pe/2.png" alt="" />
                 <div class="events-date">
                   <div class="font-size28">29</div>
                   <div class="font-size14">Jan 2024</div>
@@ -850,10 +894,7 @@
           >
             <div class="col-lg-5 col-sm-12">
               <div class="position-relative">
-                <img
-                  src="/assets/pe/3.png"
-                  alt=""
-                />
+                <img src="/assets/pe/3.png" alt="" />
                 <div class="events-date">
                   <div class="font-size28">10</div>
                   <div class="font-size14">April 2024</div>
@@ -869,17 +910,20 @@
                 >
                   <a href="event-details.html" class="text-theme-color"
                     >Vision to Action: Driving Mobility Revolution
-                    </a
-                  >
+                  </a>
                 </h5>
-                <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
-                  
-                </ul>
+                <ul
+                  class="event-time margin-10px-bottom md-margin-5px-bottom"
+                ></ul>
                 <p>
-                  On April 10, 2024, Christ Incubation Centre hosted the event "Vision to Action: Driving Mobility Revolution," 
-                  featuring distinguished speakers Visakh Sasikumar, Founder and CEO of Fyn Mobility, and Aayush Kumar from the founder’s office at Minus Zero.<br></br>
-                  Overall, the event emphasized the importance of innovation, collaboration, and a long-term vision in driving the mobility revolution within India's startup ecosystem.
-
+                  On April 10, 2024, Christ Incubation Centre hosted the event
+                  "Vision to Action: Driving Mobility Revolution," featuring
+                  distinguished speakers Visakh Sasikumar, Founder and CEO of
+                  Fyn Mobility, and Aayush Kumar from the founder’s office at
+                  Minus Zero.<br /><br />
+                  Overall, the event emphasized the importance of innovation,
+                  collaboration, and a long-term vision in driving the mobility
+                  revolution within India's startup ecosystem.
                 </p>
                 <a
                   class="butn small margin-10px-top md-no-margin-top"
@@ -905,15 +949,18 @@
                 >
                   <a href="event-details.html" class="text-theme-color"
                     >Finding Your Entrepreneurial Passion: A Guest Talk
-                    </a
-                  >
+                  </a>
                 </h5>
-                <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
-                  
-                </ul>
+                <ul
+                  class="event-time margin-10px-bottom md-margin-5px-bottom"
+                ></ul>
                 <p>
-                  On March 22, 2024, Christ Incubation Centre, in collaboration with the Economics Department, hosted the captivating event "Finding Your Entrepreneurial Passion.
-                  " Open to students from all departments, the session kicked off with a welcome address and a heartfelt felicitation by Shaju Mathew for the guest speaker, Raunak Raj. 
+                  On March 22, 2024, Christ Incubation Centre, in collaboration
+                  with the Economics Department, hosted the captivating event
+                  "Finding Your Entrepreneurial Passion. " Open to students from
+                  all departments, the session kicked off with a welcome address
+                  and a heartfelt felicitation by Shaju Mathew for the guest
+                  speaker, Raunak Raj.
                 </p>
                 <a
                   class="butn small margin-10px-top md-no-margin-top"
@@ -925,10 +972,7 @@
             </div>
             <div class="col-lg-5 order-1 order-lg-2">
               <div class="position-relative">
-                <img
-                  src="/assets/pe/4.png"
-                  alt=""
-                />
+                <img src="/assets/pe/4.png" alt="" />
                 <div class="events-date">
                   <div class="font-size28">22</div>
                   <div class="font-size14">March 2024</div>
@@ -939,7 +983,7 @@
           <!-- end event block -->
 
           <!-- start event block -->
-          
+
           <!-- end event block -->
         </div>
       </section>
@@ -1071,6 +1115,130 @@
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section id="footr">
+        <div class="container">
+          <div class="col-lg-4 col-sm-6 col-md-4">
+            <div class="footr-itm-d">
+              <div class="col-sm-12 no-pad" style="padding-left: 12px">
+                <h3><strong>CHRIST Incubation Center</strong></h3>
+                <!-- <h4>(Deemed to be University)</h4> -->
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="addrs-itm">
+                <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
+                  <i class="las la-map-marker-alt footr-itmff"></i>
+                </div>
+                <div class="col-lg-10 col-xs-10 col-sm-10 col-md-10 no-pad">
+                  <p>
+                    Dharmaram College Post, Hosur Road, Bengaluru - 560029,<br />
+                    Karnataka, India
+                  </p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="addrs-itm">
+                <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
+                  <i class="las la-phone footr-itmff"></i>
+                </div>
+                <div class="col-lg-10 col-xs-10 col-sm-10 col-md-10 no-pad">
+                  <p>Tel: +91 804012 9100 / 9600</p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="addrs-itm">
+                <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
+                  <i class="las la-fax footr-itmff"></i>
+                </div>
+                <div class="col-lg-10 col-xs-10 col-sm-10 col-md-10 no-pad">
+                  <p>Fax: 40129000</p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="addrs-itm">
+                <div class="col-lg-2 col-xs-2 col-sm-2 col-md-2">
+                  <i class="las la-envelope footr-itmff"></i>
+                </div>
+                <div class="col-lg-10 col-xs-10 col-sm-10 col-md-10 no-pad">
+                  <p>Email: mail@christuniversity.in</p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-3">
+            <div class="vison-mson">
+              <h4>Vision</h4>
+              <p style="font-style: normal">
+                Excellence in Innovative Entrepreneurship to serve the society
+              </p>
+              <h4>Mission</h4>
+              <p style="font-style: normal">
+                To promote and strive for excellence in developing reliable and
+                robust Innovation and Entrepreneurship eco-system for CHRIST
+                students, alumina, stakeholders, staff, and faculty
+              </p>
+            </div>
+          </div>
+          <div class="clearfix hdsw"></div>
+          <div class="col-lg-2 col-sm-6 col-md-2">
+            <div class="footr-lnkds">
+              <ul class="no-pad">
+                <li>
+                  <a href="about.html"> About Us </a>
+                </li>
+                <li><a href="facilities.html"> Our Facilities </a></li>
+                <li>
+                  <a href="services.html"> Our Services </a>
+                </li>
+                <li>
+                  <a href="process.html"> Process </a>
+                </li>
+                <li>
+                  <a href="#"> Blog </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-2 col-sm-6 col-md-3">
+            <div class="footr-lnkds">
+              <ul>
+                <li>
+                  <a href="http://library.christuniversity.in/"> Library </a>
+                </li>
+                <li>
+                  <a href="https://christuniversity.in/center"> Centres </a>
+                </li>
+                <li>
+                  <a href="https://christuniversity.in/center/O/CR">
+                    Research
+                  </a>
+                </li>
+                <li>
+                  <a href="https://christuniversity.in/admission-all">
+                    Admission
+                  </a>
+                </li>
+                <li>
+                  <a href="https://christuniversity.in/all-courses">
+                    Course Index
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="cpy-rgt">
+            <div class="col-sm-5 text-rigt">
+              Copyright &copy; CHRIST Incubation Center 2024
+            </div>
+          </div>
         </div>
       </section>
     </div>
