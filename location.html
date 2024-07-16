@@ -1,4 +1,10 @@
 <style>
+  html,
+  body {
+    height: 100%;
+    overflow: auto;
+  }
+
   .form-wrapper {
     /* width: 340px;*/
     padding: 13px 0 20px;
@@ -627,8 +633,6 @@
       <div class="clearfix"></div>
 
       <section id="main-banner-names">
-        <!--<div class="bg-image"></div>-->
-
         <style>
           .social {
             position: fixed;
@@ -754,10 +758,13 @@
       <br /><br />
 
       <style>
-        /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
           .coursePanels {
-            margin-left: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 300px;
+            width: fit-content;
           }
         }
       </style>
